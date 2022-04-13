@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    border: solid 1px black
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "propaganda conteudo conteudo"
+    "rodape rodape rodape ";
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-gap: 10px 15px;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    color: #fff;
+    background-color:rgb(218, 20, 168) ;
+}
+
+.propaganda{
+    grid-area: propaganda;
+    color: #fff;
+    background-color: rgb(218, 20, 168);
+}
+
+.conteudo{
+    grid-area: conteudo;
+    color: #fff;
+    background-color:rgb(218, 20, 168);
+}
+
+.rodape{
+    grid-area: rodape;
+    color: #fff;
+    background-color:rgb(218, 20, 168);
+}

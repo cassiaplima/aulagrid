@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-color: dimgrey;
+}
+
+.grid02{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "cabecalho  propaganda conteudo "
+    "conteudo02 propaganda conteudo "
+    "rodape rodape rodape ";
+    grid-template-columns: 1fr 2fr 2fr ;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-gap: 10px 15px;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: rgb(212, 22, 149);
+    
+}
+
+.propaganda{
+    grid-area: propaganda;
+    background-color: rgb(22, 178, 240);
+}
+
+.conteudo{
+    grid-area: conteudo;
+    background-color: darkgreen;
+    
+}
+
+.conteudo02{
+    grid-area: conteudo02;
+    background-color: rgb(10, 10, 247);
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: brown;
+}
